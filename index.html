@@ -1,147 +1,85 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
-    <title>YAMIN-69 SERVER COPY</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="../../../JF8bwcbwQlVU.com/sweetalert%402.1.2/dist/sweetalert.min.js"></script>
-    <script src="../../../c8gntNZsZwry.com/ajax/libs/jquery/wxusvxCPEa2b.1/8cIvRyTLJdr5.js"></script>
-
-    <style>
-        *, *:after, *:before {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -ms-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: #009688;
-            color: white;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NAGAD INFO WEBSITE BY- MOHAMAD TUHIN</title>
+<style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;  /* Light gray background */
+            color: #333;
+            margin: 20px;
             text-align: center;
         }
 
-        #main-con {
-            background: #fff;
-            height: 100%;
-            margin: 8px;
-            border-radius: 15px;
-            padding: 10px;
+        h1 {
+            color: #007acc;  /* Blue heading color */
         }
 
-        .form-container {
-            margin: 10px;
-            font-family: Arial block;
-            color: #9a9a9a;
-            border-radius: 15px;
-            box-shadow: 1px 1px 8px 1px #009688;
-            padding: 30px;
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #ffffff;  /* White form background */
+            padding: 20px;
+            border-radius: 12px;  /* Increased border-radius for a rounded look */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .form-container h1 {
-            margin: 0 0 10px;
-            font-size: 25px;
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #007acc;
         }
 
         input {
-            width: 100%;
-            height: 50px;
-            padding: 15px;
-            line-height: 20px;
-            font-size: 18px;
-            margin-bottom: 15px;
-            border: 2px solid #009688;
-            border-radius: 5px;
-            box-shadow: 1px 1px 8px 1px #009688; /* Added box shadow */
+            width: calc(100% - 16px);
+            padding: 10px;  /* Adjusted padding for input fields */
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #007acc;  /* Blue border for input fields */
+            border-radius: 8px;  /* Border-radius for a rounded input look */
         }
 
         input[type="submit"] {
-            width: 200px;
-            margin: 12px;
-            font-family: Arial block;
-            background: #fff;
-            color: #9a9a9a;
-            border-radius: 15px;
-            box-shadow: 1px 1px 8px 1px #009688;
-            padding: 10px 0px 10px 0px;
-            border: 0;
+            background-color: #007acc;
+            color: #fff;
             cursor: pointer;
-            font-style: bold;
         }
 
         input[type="submit"]:hover {
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 1px 1px 8px 1px #009688;
-            font-family: Sans-Serif;
+            background-color: #005580;  /* Darker blue on hover */
         }
 
-        #ajax-data {
-            margin: 25px 12px 12px 12px;
-            font-family: Arial block;
-            color: #9a9a9a;
-            border-radius: 15px;
-            box-shadow: 1px 1px 8px 1px #009688;
+        h2 {
+            color: #007acc;
+            text-align: center;
+        }
+
+        .response-box {
+            margin-top: 20px;
             padding: 10px;
-            display: none;
+            border: 1px solid #007acc;
+            border-radius: 8px;
+            color: #007acc;
             text-align: left;
         }
 
-        table {
-            margin: 0;
-            padding: 0;
-            border: 2px solid #009688;
-        }
-
-        table tr th {
-            background: #009688;
-            color: #fff;
-            text-align: center;
-            padding: 5px;
-        }
-
-        table tr td {
-            text-align: center;
-            background: #80CBC4;
-        }
-
-        #contactAdmin {
-            margin-top: 20px;
-        }
-
-        #contactAdmin button {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #fff; /* Set background color to white */
-            color: #4caf50;
-            border: 2px solid #4caf50; /* Add border */
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-            box-shadow: 1px 1px 8px 1px #4caf50; /* Add box shadow */
-        }
-
-        #contactAdmin button:hover {
-            background-color: #45a049;
+        .response-data {
+            font-weight: bold;
+            color: #007acc;
+            text-align: left;
         }
 </style>
 </head>
-<marquee><font color="red">TEAM UNKNOWN CYBER ZONE <font color="blue">
- </font></font></b><font color="green"><font color="blue"><br>
-</font></font></center></font></center></bold></center></marquee>
-
-    <div id="main-con">
-        <div class="form-container">
-            <h1>NID SERVER COPY</h1>
-            <form action="servercopy.php" method="GET" id="inputFormData">
-                <div>
-                    <input type="tel" placeholder="Nid: 213****352" name="nid" id="nid">
-                    <input type="text" placeholder="dob: 1986-10-02" name="dob" id="dob">
-                    <input type="submit" id="button" value="SUBMIT">
-                </div>
-            </form>
-            <div id="ajax-data"></div>
-            </div>
-            <button id=" " onclick="window.location.href='httpa://t.me/nostalgia_team'"> </button></button>
-    </div>
-</body></html>
+<body bgcolor="white">
+     <h1>NAGAD INFO FINDER</h1>
+    <form method="post" action="">
+        <div class="container">
+  <label for="number">ENTER NUMBER</label>
+  <input type="number" id="number" name="number" placeholder="Please Send Nagad Number" required>
+        <input type="submit" name="getInfo" value="FIND INFO">
+  
+  
+</form>
